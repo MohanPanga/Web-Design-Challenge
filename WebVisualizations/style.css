@@ -1,5 +1,10 @@
 @media (max-width:990.8px){
-    .custom-class{
-        background: rgb(2, 177, 119);
+    .navbar-light.bg-light{
+        background-color: rgb(2, 177, 119) !important;
     }
 }
+/* @media (max-width: 600px) {
+    .navbar-dark.bg-dark{
+       background-color: #ddd !important;
+     }
+   } */
