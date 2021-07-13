@@ -12,14 +12,15 @@
 </head>
 
 <body>
+
     <!-- Navbar container -->
     <div class="container px-4 py-2 ">
         <div class="row">
             <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand " href="index.html">
-                            Latitude
+                        <a class="navbar-brand " href="index.html">  
+                            <h2> <span class="badge bg-secondary">Latitude</span></h2>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
@@ -65,18 +66,19 @@
                     <hr>
                     <img src="./Resources/equatorsign.png" class="img-thumbnail float-start" alt="image not found"
                         style='max-width: 55%;height: auto;margin: 10px;'>
-                    <p class='fs-6 lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corporis quis
-                        quisquam sint ex
-                        exercitationem, sequi, quos autem ducimus consequatur accusamus, quidem consequuntur fugit
-                        sapiente
-                        nulla doloremque officiis. Culpa, incidunt.</p>
-                    <p class='text-muted'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias unde tempore
-                        incidunt officiis
-                        magni rerum omnis ullam temporibus consequatur aliquid distinctio, voluptate repellat
-                        consequuntur exercitationem dolore delectus earum saepe aliquam?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi cumque laboriosam nihil pariatur
-                        amet unde qui libero. Aperiam modi, architecto cum maxime nam quod nemo sint esse maiores
-                        voluptate praesentium.</p>
+                    <p class='fs-6 lead'>Data on temperature, humidity, windspeed and cloudiness was collected from over
+                        500 cities at latitudes on both sides of the equator. The observed trends are discussed for each
+                        of the parameters (X). To get more details please follow the thumbnails on the visualizations
+                        panel
+                        to the right.</p>
+                    <p class='text-muted'>The cities are selected using a random number in the positive and negative
+                        latitude range [-90,90]. A python library citidata was used to identify nearby cities to the
+                        latitude and longitude. Weather data for the cities was obtained using OpenWeatherMap api and
+                        requests library in python. Exception handling in python had to be implemented to overcome
+                        challenges related to missing data in the json object returned by OpenWeatherMap</p>
+                    <p class='text-muted'>Pandas dataframes were used to organize the citi and weather data. Missing data was cleaned using
+                        various techniques in pandas. Finally the plots for each parameter (X) as a function of latitude
+                        were generated using seaborn plotting library. </p>
                 </div>
             </div>
             <div class="col-lg-4">

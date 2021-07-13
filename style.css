@@ -1,6 +1,10 @@
 @media (max-width:990.8px){
     .navbar-light.bg-light{
         background-color: rgb(2, 177, 119) !important;
+
+    }
+    .badge.bg-secondary{
+        background-color: rgb(2, 177, 119) !important;  
     }
 }
 /* @media (max-width: 600px) {
